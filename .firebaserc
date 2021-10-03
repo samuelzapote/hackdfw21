@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "hackdfw21-dae8f": {
+      "hosting": {
+        "hapihang": [
+          "hackdfw21-dae8f"
+        ]
+      }
+    }
+  }
+}
