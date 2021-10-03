@@ -1,0 +1,42 @@
+:host {
+  height: 100%;
+  width: 100%;
+}
+
+.entry-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-entry-container {
+  width: 30%;
+  height: 18%;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0px 0px 6px 2px lightgrey;
+}
+
+.name-entry-field {
+  margin: 0;
+  width: 65%;
+  padding: 5%;
+  text-align: center;
+
+  mat-form-field {
+    width: 100%;
+  }
+}
+
+.name-entry-confirm-button {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

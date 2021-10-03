@@ -1,0 +1,21 @@
+<div class="campus-container" [ngStyle]="{ 'backgroundColor': backgroundHexValue }">
+  <div class="background-selection">
+    <button mat-fab (click)="changeBackgroundColor('#CDCAF3')" [ngStyle]="{ 'backgroundColor': '#CDCAF3' }"></button>
+    <button mat-fab (click)="changeBackgroundColor('#F5C2C3')" [ngStyle]="{ 'backgroundColor': '#F5C2C3' }"></button>
+    <button mat-fab (click)="changeBackgroundColor('#76B7EB')" [ngStyle]="{ 'backgroundColor': '#76B7EB' }"></button>
+  </div>
+
+  <div class="students-container">
+    <div cdkDrag class="main-student-container" *ngFor="let student of school; index as i" [cdkDragFreeDragPosition]="school[i]">
+      <div class="student-content">
+        <p>{{ student.name }}</p>
+      </div>
+      <angular-emojis
+        class="student-box"
+        size="100"
+        [name]="student.emotion || ''"
+        [ngStyle]="{ 'boxShadow': (student.statusHeu ? student.statusHeu : 'lightgrey') + ' 0 0 8px 4px' }">
+      </angular-emojis>
+    </div>
+  </div>
+</div>
